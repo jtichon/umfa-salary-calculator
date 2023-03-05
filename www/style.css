@@ -1,0 +1,75 @@
+.title {
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    background-color: rgb(250, 218, 223);
+}
+
+
+.form-control{
+    font-size: large;
+    border-width: 2px;
+    border-color: black;
+}
+
+.radio{
+    font-size: large;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+.control-label{
+    font-size: large;
+}
+
+.selectize-input {
+    font-size: large;
+    border-width: 2px;
+    border-color: black;
+}
+
+.control-label {
+    border-width: 2px;
+    border-color: black;
+}
+
+#n {
+    font-size: large;
+    border-width: 2px;
+    border-color: black;
+} 
+
+.label {
+    font-size: large;
+} 
+
+.btn {
+  font-size: large;
+  border-width: 2px;
+  border-color: black;
+}
+
+.summary {
+  font-size: large;
+  border: solid 2px black;
+  background-color: white;
+  text-align: center;
+  padding: 2cm;
+}
+
+.grid {
+  font-size: large;
+  border: solid 2px black;
+  background-color: white;
+  text-align: center;
+  padding: 2cm;
+}
+
+.explanation {
+  border-width: 2cm;
+  padding: 2cm;
+  font-size: large;
+}
