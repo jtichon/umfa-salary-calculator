@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(250, 218, 223);
+    background-color:#00add8;
 }
 
 
@@ -62,8 +62,8 @@ body {
 
 .grid {
   font-size: large;
-  border: solid 2px black;
-  background-color: white;
+  /*border: solid 2px black;*/
+  /*background-color: white;*/
   text-align: center;
   padding: 2cm;
 }
@@ -72,4 +72,8 @@ body {
   border-width: 2cm;
   padding: 2cm;
   font-size: large;
+}
+
+.table.dataTable {
+  background-color: white;
 }

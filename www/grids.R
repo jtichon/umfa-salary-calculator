@@ -22,5 +22,8 @@ maximum3 <- c(176645.60, 143860.61, 122561.56, 97826.97, 143860.61, 122561.56,
               109778.16, 162147.56, 129564.36, 112408.65, 97598.01)
 
 grid2021 <- data.frame(rank, floor = floor1, increment = increment1, maximum = maximum1)
+grid2021 <- datatable(grid2021, colnames = c("Rank", "Floor", "Increment", "Maximum"), options = list(iDisplayLength = 25))
 grid2022 <- data.frame(rank, floor = floor2, increment = increment2, maximum = maximum2)
+grid2022 <- datatable(grid2022, colnames = c("Rank", "Floor", "Increment", "Maximum"), options = list(iDisplayLength = 25))
 grid2023 <- data.frame(rank, floor = floor3, increment = increment3, maximum = maximum3)
+grid2023 <- datatable(grid2023, colnames = c("Rank", "Floor", "Increment", "Maximum"), options = list(iDisplayLength = 25))

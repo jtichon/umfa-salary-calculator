@@ -9,6 +9,7 @@
 
 library(shiny)
 library(tidyverse)
+library(DT)
 source("www/grids.R")
 
 # Define UI for application that draws a histogram
@@ -19,7 +20,14 @@ ui <- fluidPage(
   ),
   
   titlePanel(
-    div(class = "title", "UMFA Salary Calculator")
+    div(class = "title", 
+        tags$img(
+          src = "Umfa_Logo2.png",
+          alt = "Logo for UMFA",
+          width = 300 ,
+          height = 75
+        ),
+        "UMFA Salary Calculator")
   ),
   
   fluidRow(column(4,
@@ -51,7 +59,7 @@ ui <- fluidPage(
  
   fluidRow(
   column(4,
-         radioButtons("promotion", "Promotion?", 
+         radioButtons("promotion", "Are You Receiving a Promotion?", 
                       choices = c("Yes", "No"),
                       selected = "No")
   ),
@@ -113,7 +121,7 @@ ui <- fluidPage(
   fluidRow(
     column(12, align = "center",
     div(class = "grid",
-        tableOutput("grids")
+        DT::dataTableOutput("grids")
     )
     )
   )
@@ -310,15 +318,15 @@ server <- function(input, output) {
     
     
     observeEvent(input$table2021, {
-      output$grids <- renderTable({grid2021})
+      output$grids <- DT::renderDataTable(grid2021)
     })
     
     observeEvent(input$table2022, {
-      output$grids <- renderTable({grid2022})
+      output$grids <- DT::renderDataTable(grid2022)
     })
 
     observeEvent(input$table2023, {
-      output$grids <- renderTable({grid2023})
+      output$grids <- DT::renderDataTable(grid2023)
     })
 
     
