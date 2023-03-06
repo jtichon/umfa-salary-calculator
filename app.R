@@ -135,14 +135,14 @@ server <- function(input, output) {
   
   #Create grid of values
   dt <- reactive({
-    if(input$year == 2022){grid2022}
-    else{grid2023}
+    if(input$year == 2022){grid2022DF}
+    else{grid2023DF}
   })
   
   # Create grid for previous year
   dtPrevious <- reactive({
-    if(input$year == 2022){grid2021}
-    else{grid2022}
+    if(input$year == 2022){grid2021DF}
+    else{grid2022DF}
   })
   
   # Calculate scale increase
